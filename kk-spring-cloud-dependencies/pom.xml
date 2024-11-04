@@ -10,7 +10,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>kk-arch</groupId>
+    <groupId>com.kk.arch</groupId>
     <artifactId>kk-spring-cloud-dependencies</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>

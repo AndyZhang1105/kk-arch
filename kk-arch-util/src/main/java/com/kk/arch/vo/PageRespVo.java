@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 
-package com.kk.arch.util;
+package com.kk.arch.vo;
 
 import java.io.Serializable;
+import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,30 +32,20 @@ import lombok.ToString;
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseData<T> implements Serializable {
+public class PageRespVo<T> implements Serializable {
 
-	/**
-	 *  成功.
-	 */
-	public static final int SUCCESS = 0;
+	private long total; // 总记录数
+	private long pageNum; // 当前页码
+	private long pageSize; // 每页记录数
+	private List<T> list; // 当前页的数据列表
 
-	/**
-	 * 失败.
-	 */
-	public static final int FAIL = -1;
-
-	private int code;
-	private String msg;
-	private T data;
-
-	public ResponseData(int code, String msg) {
-		this.code = code;
-		this.msg = msg;
-	}
-
-	public ResponseData(int code, T data) {
-		this.code = code;
-		this.data = data;
+	public static <T> PageRespVo<T> of(long total, long pageNum, long pageSize, List<T> list) {
+		PageRespVo<T> response = new PageRespVo<>();
+		response.setTotal(total);
+		response.setPageNum(pageNum);
+		response.setPageSize(pageSize);
+		response.setList(list);
+		return response;
 	}
 
 }

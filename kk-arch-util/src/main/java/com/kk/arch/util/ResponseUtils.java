@@ -16,12 +16,14 @@
 
 package com.kk.arch.util;
 
-import static com.kk.arch.util.ResponseData.FAIL;
-import static com.kk.arch.util.ResponseData.SUCCESS;
+import com.kk.arch.vo.ResponseData;
 
-public final class ResponseDataUtils {
+import static com.kk.arch.vo.ResponseData.FAIL;
+import static com.kk.arch.vo.ResponseData.SUCCESS;
 
-	private ResponseDataUtils() {
+public final class ResponseUtils {
+
+	private ResponseUtils() {
 
 	}
 
