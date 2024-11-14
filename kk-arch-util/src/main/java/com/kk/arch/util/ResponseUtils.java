@@ -21,6 +21,9 @@ import com.kk.arch.vo.ResponseData;
 import static com.kk.arch.vo.ResponseData.FAIL;
 import static com.kk.arch.vo.ResponseData.SUCCESS;
 
+/**
+ * @author Zal
+ */
 public final class ResponseUtils {
 
 	private ResponseUtils() {

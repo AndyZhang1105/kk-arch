@@ -25,6 +25,9 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+/**
+ * @author Zal
+ */
 @Data
 @Builder
 @ToString
