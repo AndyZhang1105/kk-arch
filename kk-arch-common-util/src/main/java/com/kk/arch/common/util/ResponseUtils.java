@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.kk.arch.util;
+package com.kk.arch.common.util;
 
-import com.kk.arch.vo.ResponseData;
+import com.kk.arch.common.vo.ResponseData;
 
-import static com.kk.arch.vo.ResponseData.FAIL;
-import static com.kk.arch.vo.ResponseData.SUCCESS;
+import static com.kk.arch.common.vo.ResponseData.FAIL;
+import static com.kk.arch.common.vo.ResponseData.SUCCESS;
 
 /**
  * @author Zal

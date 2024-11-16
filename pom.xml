@@ -10,10 +10,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>kk-arch-util</module>
+        <module>kk-arch-common-util</module>
         <module>kk-arch-dubbo-service</module>
-        <module>kk-spring-cloud-dependencies</module>
+        <module>kk-arch-spring-cloud</module>
         <module>kk-arch-dubbo-web</module>
+        <module>kk-arch-dubbo-parent</module>
     </modules>
 
     <properties>

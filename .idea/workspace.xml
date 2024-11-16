@@ -5,17 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ed346d6-4261-4394-acf3-130291a6af3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/constants/CommonConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/AssertUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/CollectionUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/AspectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/SnowflakeIdUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-dubbo-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/DateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/ResponseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/ResponseUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/vo/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/vo/ResponseData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-dubbo-service/.flattened-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-dubbo-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-dubbo-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-dubbo-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-dubbo-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/.flattened-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/constants/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/constants/CommonConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/AssertUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/AssertUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/CollectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/CollectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/DateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/util/ResponseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/ResponseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/vo/PageReqVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/vo/PageReqVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/vo/PageRespVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/vo/PageRespVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/arch/vo/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/vo/ResponseData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-spring-cloud-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-spring-cloud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +90,39 @@
       <recent name="D:\code\kk-arch\kk-spring-cloud-dependencies" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="SnowflakeIdUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kk.arch.util.SnowflakeIdUtils" />
+      <module name="kk-arch-common-util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kk.arch.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="kk-arch-common-util" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="kk-arch-common-util" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SnowflakeIdUtils" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,7 +141,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kk-arch-util/src/main/java/com/kk/util/Main.java</url>
+          <url>file://$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/util/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>

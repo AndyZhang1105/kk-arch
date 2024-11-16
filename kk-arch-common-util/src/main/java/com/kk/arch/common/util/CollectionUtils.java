@@ -1,4 +1,4 @@
-package com.kk.arch.util;
+package com.kk.arch.common.util;
 
 import java.util.List;
 

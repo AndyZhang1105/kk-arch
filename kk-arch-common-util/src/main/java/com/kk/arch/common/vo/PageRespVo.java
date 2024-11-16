@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.kk.arch.vo;
+package com.kk.arch.common.vo;
 
 import java.io.Serializable;
 import java.util.List;

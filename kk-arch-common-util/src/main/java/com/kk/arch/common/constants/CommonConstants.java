@@ -1,4 +1,4 @@
-package com.kk.arch.constants;
+package com.kk.arch.common.constants;
 
 /**
  * @author Zal

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.kk.arch.vo;
+package com.kk.arch.common.vo;
 
 import java.io.Serializable;
 
@@ -25,6 +25,9 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+/**
+ * @author Zal
+ */
 @Data
 @Builder
 @ToString

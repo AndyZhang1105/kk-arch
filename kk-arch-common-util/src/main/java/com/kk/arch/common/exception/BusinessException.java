@@ -1,4 +1,4 @@
-package com.kk.arch.exception;
+package com.kk.arch.common.exception;
 
 import lombok.Builder;
 import lombok.Data;

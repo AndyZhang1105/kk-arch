@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.kk.arch.util;
+package com.kk.arch.common.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,9 +28,9 @@ import com.alibaba.fastjson.TypeReference;
  *
  * @author jin
  */
-public final class BeanUtils {
+public final class JsonUtils {
 
-	private BeanUtils() {
+	private JsonUtils() {
 
 	}
 
@@ -79,9 +79,16 @@ public final class BeanUtils {
 		if (sourceList == null || sourceList.isEmpty()) {
 			return new ArrayList<>();
 		}
-		return JSON.parseObject(JSON.toJSONString(sourceList), new TypeReference<List<T>>() {
+		return JSON.parseArray(JSON.toJSONString(sourceList), targetClass);
+	}
 
-		});
+	/**
+	 * 将对象转成json字符串
+	 * @param param 转换的源对象
+	 * @return 转换后的字符串
+	 */
+	public static String toJsonString(Object param) {
+		return JSON.toJSONString(param);
 	}
 }
 
