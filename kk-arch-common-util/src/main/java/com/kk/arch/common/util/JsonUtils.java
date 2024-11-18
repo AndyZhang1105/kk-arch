@@ -22,6 +22,8 @@ import java.util.Map;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
+import com.kk.arch.common.vo.PageReqVo;
+import com.kk.arch.common.vo.PageRespVo;
 
 /**
  * 转换对象工具.
@@ -89,6 +91,39 @@ public final class JsonUtils {
 	 */
 	public static String toJsonString(Object param) {
 		return JSON.toJSONString(param);
+	}
+
+	/**
+	 * 将对象转成json字符串
+	 * @param param 转换的源对象
+	 * @return 转换后的map
+	 */
+	public static Map<String, Object> toMap(Object param) {
+		String jsonString = JSON.toJSONString(param);
+		return JSON.parseObject(jsonString, new TypeReference<Map<String, Object>>() {});
+	}
+
+	public static <T> T mapToObject(Map<String, Object> map, Class<T> targetClass) {
+		if (map == null || map.keySet().isEmpty()) {
+			return null;
+		}
+		return JSON.parseObject(JSON.toJSONString(map), targetClass);
+	}
+
+	/**
+	 * 将一种类型的分页类请求对象转换成另一种
+	 */
+	public static <T, S> PageReqVo<T> toPageReqVo(PageReqVo<S> pageReqVo, Class<T> destClass) {
+		final T destParam = JsonUtils.toObject(pageReqVo.getParam(), destClass);
+		return PageReqVo.of(pageReqVo.getPageNum(), pageReqVo.getPageSize(), destParam);
+	}
+
+	/**
+	 * 将一种类型的分页类结果对象转换成另一种
+	 */
+	public static <T, S> PageRespVo<T> toPageRespVo(PageRespVo<S> dataPageVo, Class<T> destClass) {
+		final List<T> destVoList = JsonUtils.toList(dataPageVo.getList(), destClass);
+        return PageRespVo.of(dataPageVo.getTotal(), dataPageVo.getPageNum(), dataPageVo.getPageSize(), destVoList);
 	}
 }
 

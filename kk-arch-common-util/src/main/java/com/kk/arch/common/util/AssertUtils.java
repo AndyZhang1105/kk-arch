@@ -1,7 +1,6 @@
 package com.kk.arch.common.util;
 
 import com.kk.arch.common.exception.BusinessException;
-import org.springframework.util.StringUtils;
 
 import java.util.List;
 import java.util.Objects;
@@ -32,7 +31,13 @@ public class AssertUtils {
     }
 
     public static void isNotEmpty(String params, String message) {
-        if (StringUtils.isEmpty(params)) {
+        if (params == null || params.isEmpty()) {
+            throw new BusinessException(ERROR_CODE, message);
+        }
+    }
+
+    public static void isNotBlank(String params, String message) {
+        if (params == null || params.isBlank()) {
             throw new BusinessException(ERROR_CODE, message);
         }
     }
