@@ -14,6 +14,9 @@
     <artifactId>kk-arch-dubbo-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>Spring Cloud Alibaba Parent</name>
+    <description>Spring Cloud Alibaba Parent for other projects to extend</description>
+    <url>https://github.com/AndyZhang1105/kk-arch.git</url>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -222,6 +225,16 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+
+        <!-- spring cloud load nacos config to start service -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
         <!-- Spring Boot Dubbo依赖 -->

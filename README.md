@@ -5,6 +5,13 @@ KK 项目，是基于Spring Cloud Alibaba + Dubbo 的一套开源的微服务分
 依托 Spring Cloud Alibaba，您只需要添加一些注解和少量配置，就可以将 Spring Cloud 应用接入阿里微服务解决方案，通过阿里中间件来迅速搭建分布式应用系统。
 通过 Dubbo 可以高效的将微服务串联到业务模块中。
 
+本项目为分布式微服务架构，主要采用spring boot3x版本的web后端服务开发模板，整合了众多常用依赖，以及起步功能，适合中作为中大项目的工程。
+## 版本介绍
+- **java17**
+- **maven3.6.1**
+- **springboot3.2.2**
+- **其他依赖均采用较新的版本目前并未发现存在依赖冲突、版本不兼容问题**
+
 ## 主要技术要点
 
 * **服务限流降级**：默认支持 WebServlet、WebFlux、OpenFeign、RestTemplate、Spring Cloud Gateway、Dubbo 和 RocketMQ 限流降级功能的接入，可以在运行时通过控制台实时修改限流降级规则，还支持查看限流降级 Metrics 监控。

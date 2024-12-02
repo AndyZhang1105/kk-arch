@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ed346d6-4261-4394-acf3-130291a6af3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/Md5Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common-util/src/test/java/com/kk/arch/commom/util/Md5UtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/AssertUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/AssertUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/constants/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/constants/CommonConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-dubbo-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-dubbo-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-dubbo-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-dubbo-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +76,24 @@
       <recent name="D:\code\kk-arch" />
       <recent name="D:\code\kk-arch\kk-spring-cloud-dependencies" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kk.arch.common.util" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Md5UtilsTest">
+    <configuration name="Md5UtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kk.arch.commom.util.Md5UtilsTest" />
+      <module name="kk-arch-common-util" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kk.arch.commom.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SnowflakeIdUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kk.arch.util.SnowflakeIdUtils" />
       <module name="kk-arch-common-util" />
@@ -86,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Md5UtilsTest" />
         <item itemvalue="Application.SnowflakeIdUtils" />
       </list>
     </recent_temporary>
