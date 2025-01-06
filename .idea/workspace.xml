@@ -5,11 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ed346d6-4261-4394-acf3-130291a6af3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/kk-arch-dubbo-remote/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/aop/DistributedLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/aop/DistributedLockAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/aop/LocalCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/aop/LocalCacheAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/aop/MultiLevelCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/aop/MultiLevelCacheAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/aop/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/aop/RedisCacheAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/ApplicationContextHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/FastJsonCacheSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/MultiLevelCacheHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/MybatisPlusTenantHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/OhcHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/RedisHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/conf/TenantContextHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/CollectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/CollectionUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/.flattened-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/constants/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/constants/CommonConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/AspectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/AspectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/AssertUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/AssertUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/CollectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/CollectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/Md5Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/Md5Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/ResponseUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/ResponseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/SnowflakeIdUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/SnowflakeIdUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/util/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/util/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/vo/PageReqVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/vo/PageReqVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/vo/PageRespVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/vo/PageRespVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/arch/common/vo/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/arch/common/vo/ResponseData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kk-arch-common-util/src/test/java/com/kk/arch/commom/util/Md5UtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/kk-arch-common/src/test/java/com/kk/arch/commom/util/Md5UtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,22 +83,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/code/kk-arch",
-    "onboarding.tips.debug.path": "D:/code/kk-arch/kk-arch-dubbo-web/src/main/java/com/kk/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.37931034",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/kk-arch&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/code/kk-arch/kk-arch-dubbo-web/src/main/java/com/kk/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37931034&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\code\kk-arch" />
@@ -78,7 +111,7 @@
   <component name="RunManager" selected="Application.Md5UtilsTest">
     <configuration name="Md5UtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kk.arch.commom.util.Md5UtilsTest" />
-      <module name="kk-arch-common-util" />
+      <module name="kk-arch-common" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kk.arch.commom.util.*" />
@@ -91,7 +124,7 @@
     </configuration>
     <configuration name="SnowflakeIdUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kk.arch.util.SnowflakeIdUtils" />
-      <module name="kk-arch-common-util" />
+      <module name="kk-arch-common" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kk.arch.util.*" />
@@ -127,7 +160,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/kk-arch-common-util/src/main/java/com/kk/util/Main.java</url>
+          <url>file://$PROJECT_DIR$/kk-arch-common/src/main/java/com/kk/util/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>

@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>kk-arch-common-util</module>
+        <module>kk-arch-common</module>
         <module>kk-arch-dubbo-service</module>
         <module>kk-arch-spring-cloud</module>
         <module>kk-arch-dubbo-web</module>
