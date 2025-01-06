@@ -15,6 +15,7 @@
         <module>kk-arch-spring-cloud</module>
         <module>kk-arch-dubbo-web</module>
         <module>kk-arch-dubbo-parent</module>
+        <module>kk-arch-dubbo-remote</module>
     </modules>
 
     <properties>

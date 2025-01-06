@@ -20,6 +20,8 @@ import org.springframework.util.Assert;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.util.*;
 
 /**
@@ -104,10 +106,21 @@ public class DateUtils {
     /**
      * 字符串转换成日期，格式自动检测
      */
-    public static Date parse(String dateStr) throws ParseException {
+    public static Date parse(String dateStr) {
         String fmt = getFmtStr(dateStr);
+        return parse(dateStr, fmt);
+    }
+
+    /**
+     * 字符串转换成日期，格式自动检测
+     */
+    public static Date parse(String dateStr, String fmt) {
         SimpleDateFormat sdf = new SimpleDateFormat(fmt);
-        return sdf.parse(dateStr);
+        try {
+            return sdf.parse(dateStr);
+        } catch (Exception e) {
+            throw new RuntimeException(e.getMessage());
+        }
     }
 
     /**
@@ -238,6 +251,18 @@ public class DateUtils {
     }
 
     /**
+     * 获取参数日期时间的星期，星期一返回1，星期天返回7，星期天是一周的最后一天
+     */
+    public static int getWeek(Date date1) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date1);
+        int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+
+        // 如果是 Sunday (1)，返回 7；否则，返回 dayOfWeek - 1
+        return (dayOfWeek == Calendar.SUNDAY) ? 7 : dayOfWeek - 1;
+    }
+
+    /**
      * 转成日期时间
      */
     public static Date toDate(int year, int month, int day) {
@@ -256,59 +281,17 @@ public class DateUtils {
     /**
      * 获取一周最小的日期时间
      */
-    public static Date getMinDateOfWeek(Date date, Locale locale) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
-
-        calendar.set(Calendar.DAY_OF_WEEK, calendar.getActualMinimum(Calendar.DAY_OF_WEEK));
-        calendar.set(Calendar.HOUR_OF_DAY, calendar.getActualMinimum(Calendar.HOUR_OF_DAY));
-        calendar.set(Calendar.MINUTE, calendar.getActualMinimum(Calendar.MINUTE));
-        calendar.set(Calendar.SECOND, calendar.getActualMinimum(Calendar.SECOND));
-        calendar.set(Calendar.MILLISECOND, calendar.getActualMinimum(Calendar.MILLISECOND));
-        if (locale == null) {
-            locale = Locale.CHINESE;
-        }
-
-        Date tmpDate = calendar.getTime();
-        if (Locale.CHINESE.getLanguage().equals(locale.getLanguage())) {
-            int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-            if (dayOfWeek == 1) {
-                tmpDate = addDays(tmpDate, -6);
-            } else {
-                tmpDate = addDays(tmpDate, 1);
-            }
-        }
-
-        return tmpDate;
+    public static Date getMinDateOfWeek(Date date) {
+        int week = getWeek(date);
+        return getMinDateOfDay(addDays(date, -(week - 1)));
     }
 
     /**
      * 获取一周最大的日期时间
      */
-    public static Date getMaxDateOfWeek(Date date, Locale locale) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
-
-        calendar.set(Calendar.DAY_OF_WEEK, calendar.getActualMaximum(Calendar.DAY_OF_WEEK));
-        calendar.set(Calendar.HOUR_OF_DAY, calendar.getActualMaximum(Calendar.HOUR_OF_DAY));
-        calendar.set(Calendar.MINUTE, calendar.getActualMaximum(Calendar.MINUTE));
-        calendar.set(Calendar.SECOND, calendar.getActualMaximum(Calendar.SECOND));
-        calendar.set(Calendar.MILLISECOND, calendar.getActualMaximum(Calendar.MILLISECOND));
-        if (locale == null) {
-            locale = Locale.CHINESE;
-        }
-
-        Date tmpDate = calendar.getTime();
-        if (Locale.CHINESE.getLanguage().equals(locale.getLanguage())) {
-            int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
-            if (dayOfWeek == 1) {
-                tmpDate = addDays(tmpDate, -6);
-            } else {
-                tmpDate = addDays(tmpDate, 1);
-            }
-        }
-
-        return tmpDate;
+    public static Date getMaxDateOfWeek(Date date) {
+        int week = getWeek(date);
+        return getMaxDateOfDay(addDays(date, (7 - week)));
     }
 
     /**
@@ -700,6 +683,23 @@ public class DateUtils {
         String startDateStr = format(startDate, "yyyy");
         String endDateStr = format(endDate, "yyyy");
         return startDateStr.equals(endDateStr);
+    }
+
+    /**
+     * 参数日期时间是不是在一个开始的时间与结束的时间的区段内
+     */
+    public static boolean isBetween(Date pDate, String startHms, String endHms) {
+        final String datePart = format(pDate, YYYY_MM_DD);
+        final Date startDate = parse(datePart + " " + startHms, YYYY_MM_DD_HH_MM_SS);
+        final Date endDate = parse(datePart + " " + endHms, YYYY_MM_DD_HH_MM_SS);
+        return isBetween(pDate, startDate, endDate);
+    }
+
+    /**
+     * 参数日期时间是不是在开始日期时间与结束日期时间之间
+     */
+    private static boolean isBetween(Date pDate, Date startDate, Date endDate) {
+        return !(pDate.before(startDate) || pDate.after(endDate));
     }
 
 }

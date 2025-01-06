@@ -11,4 +11,12 @@ public class CollectionUtils extends org.springframework.util.CollectionUtils {
         return !org.springframework.util.CollectionUtils.isEmpty(paramList);
     }
 
+    public static boolean anyMatch(List<String> aList, List<String> bList) {
+        return aList.stream().anyMatch(bList::contains);
+    }
+
+    public static boolean noneMatch(List<String> aList, List<String> bList) {
+        return aList.stream().noneMatch(bList::contains);
+    }
+
 }
