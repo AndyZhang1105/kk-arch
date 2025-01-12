@@ -10,12 +10,15 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>kk-arch-common</module>
-        <module>kk-arch-dubbo-service</module>
-        <module>kk-arch-spring-cloud</module>
-        <module>kk-arch-dubbo-web</module>
-        <module>kk-arch-dubbo-parent</module>
-        <module>kk-arch-dubbo-remote</module>
+        <module>kk-arch-spring-cloud-parent</module>
+        <module>kk-arch-dubbo-web-parent</module>
+        <module>kk-arch-dubbo-common-parent</module>
+        <module>kk-arch-dubbo-remote-parent</module>
+        <module>kk-arch-dubbo-remote-dependency</module>
+        <module>kk-arch-dubbo-service-parent</module>
+        <module>kk-arch-dubbo-service-dependency</module>
+        <module>kk-arch-dubbo-common-dependency</module>
+        <module>kk-arch-dubbo-web-dependency</module>
     </modules>
 
     <properties>
@@ -24,5 +27,97 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <revision>1.0.0</revision>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.1.13</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.22.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.34</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>3.2.9</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.caffinitas.ohc</groupId>
+            <artifactId>ohc-core</artifactId>
+            <version>0.7.4</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>6.1.12</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>3.0.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>3.3.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>3.0.4</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.16</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-core</artifactId>
+            <version>3.5.9</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.5.9</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-jsqlparser</artifactId>
+            <version>3.5.9</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.kk.arch</groupId>
+            <artifactId>kk-arch-dubbo-remote-dependency</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.13.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
