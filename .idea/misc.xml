@@ -11,6 +11,8 @@
       <set>
         <option value="$PROJECT_DIR$/kk-arch-dubbo-common-parent/pom.xml" />
         <option value="$PROJECT_DIR$/kk-arch-dubbo-remote-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/kk-arch-dubbo-service-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/kk-arch-dubbo-web-parent/pom.xml" />
       </set>
     </option>
   </component>

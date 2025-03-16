@@ -10,8 +10,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>kk-arch-dubbo-common-dependency</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>kk-arch-dubbo-common-dependencies</artifactId>
+    <version>${revision}</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -166,7 +166,7 @@
 
         <dependency>
             <groupId>com.kk.arch</groupId>
-            <artifactId>kk-arch-dubbo-remote-dependency</artifactId>
+            <artifactId>kk-arch-remote-dependencies</artifactId>
             <version>${revision}</version>
         </dependency>
 

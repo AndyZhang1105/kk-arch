@@ -8,11 +8,11 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <groupId>com.kk.arch</groupId>
-  <artifactId>kk-arch-dubbo-common-dependency</artifactId>
+  <artifactId>kk-arch-dubbo-common-dependencies</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <description>Spring Cloud parent pom, managing plugins and dependencies for Spring
 		Cloud projects</description>
-  <url>https://spring.io/spring-cloud/kk-arch/kk-arch-dubbo-common-dependency</url>
+  <url>https://spring.io/spring-cloud/kk-arch/kk-arch-dubbo-common-dependencies</url>
   <organization>
     <name>Pivotal Software, Inc.</name>
     <url>https://www.spring.io</url>
@@ -31,9 +31,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:git://github.com/spring-cloud/spring-cloud-build.git/kk-arch/kk-arch-dubbo-common-dependency</connection>
-    <developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-build.git/kk-arch/kk-arch-dubbo-common-dependency</developerConnection>
-    <url>https://github.com/spring-cloud/spring-cloud-build/kk-arch/kk-arch-dubbo-common-dependency</url>
+    <connection>scm:git:git://github.com/spring-cloud/spring-cloud-build.git/kk-arch/kk-arch-dubbo-common-dependencies</connection>
+    <developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-build.git/kk-arch/kk-arch-dubbo-common-dependencies</developerConnection>
+    <url>https://github.com/spring-cloud/spring-cloud-build/kk-arch/kk-arch-dubbo-common-dependencies</url>
   </scm>
   <dependencies>
     <dependency>
@@ -182,7 +182,7 @@
     </dependency>
     <dependency>
       <groupId>com.kk.arch</groupId>
-      <artifactId>kk-arch-dubbo-remote-dependency</artifactId>
+      <artifactId>kk-arch-remote-dependencies</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>

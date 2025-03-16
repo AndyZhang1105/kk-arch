@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.kk.arch</groupId>
+    <artifactId>kk-arch</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.kk.arch</groupId>
+  <artifactId>kk-arch-dubbo-web-dependencies</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <description>Spring Cloud parent pom, managing plugins and dependencies for Spring
+		Cloud projects</description>
+  <url>https://spring.io/spring-cloud/kk-arch/kk-arch-dubbo-web-dependencies</url>
+  <organization>
+    <name>Pivotal Software, Inc.</name>
+    <url>https://www.spring.io</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>ZalZhang</name>
+      <email>275578458@qq.com</email>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/spring-cloud/spring-cloud-build.git/kk-arch/kk-arch-dubbo-web-dependencies</connection>
+    <developerConnection>scm:git:ssh://git@github.com/spring-cloud/spring-cloud-build.git/kk-arch/kk-arch-dubbo-web-dependencies</developerConnection>
+    <url>https://github.com/spring-cloud/spring-cloud-build/kk-arch/kk-arch-dubbo-web-dependencies</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>com.kk.arch</groupId>
+      <artifactId>kk-arch-dubbo-common-dependency</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>

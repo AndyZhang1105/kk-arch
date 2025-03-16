@@ -32,12 +32,10 @@
 
     <modules>
         <module>spring-cloud-alibaba-dependencies</module>
-        <module>kk-arch-dubbo-web-parent</module>
-        <module>kk-arch-dubbo-remote-dependency</module>
-        <module>kk-arch-dubbo-service-parent</module>
-        <module>kk-arch-dubbo-service-dependency</module>
-        <module>kk-arch-dubbo-common-dependency</module>
-        <module>kk-arch-dubbo-web-dependency</module>
+        <module>kk-arch-remote-dependencies</module>
+        <module>kk-arch-dubbo-service-dependencies</module>
+        <module>kk-arch-dubbo-common-dependencies</module>
+        <module>kk-arch-dubbo-web-dependencies</module>
     </modules>
 
     <properties>
