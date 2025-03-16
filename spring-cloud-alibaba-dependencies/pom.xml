@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.kk.arch</groupId>
-    <artifactId>kk-arch-spring-cloud-parent</artifactId>
+    <artifactId>spring-cloud-alibaba-dependencies</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
     <name>Spring Cloud Alibaba Dependencies</name>

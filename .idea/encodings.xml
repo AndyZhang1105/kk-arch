@@ -16,8 +16,8 @@
     <file url="file://$PROJECT_DIR$/kk-arch-dubbo-web-dependency/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kk-arch-dubbo-web-parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kk-arch-dubbo-web-parent/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/kk-arch-spring-cloud-parent/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/kk-arch-spring-cloud-parent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-alibaba-dependencies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-alibaba-dependencies/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
