@@ -37,3 +37,27 @@ KK 项目，是基于Spring Cloud Alibaba + Dubbo 的一套开源的微服务分
 * **小微商城**：基于微信平台提供小程序购物的能力。
 * **系统管理**：实现商户的账号、部门、角色、权限、门店等信息的管理。
 
+营销：
+
+dubbo.application.name=KkMarketingWeb
+dubbo.protocol.port=20921
+spring.application.name=kk-order-web
+server.port=18021
+
+dubbo.application.name=MarketingCouponService
+dubbo.protocol.port=20920
+spring.application.name=kk-marketing-coupon-service
+server.port=18020
+
+订单：
+
+dubbo.application.name=OrderWebApplication
+dubbo.protocol.port=20931
+spring.application.name=kk-order-web
+server.port=18031
+
+dubbo.application.name=OrderCenterService
+dubbo.protocol.port=20930
+spring.application.name=kk-order-center-service
+server.port=18030
+

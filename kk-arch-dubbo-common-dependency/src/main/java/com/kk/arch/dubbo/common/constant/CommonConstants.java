@@ -14,4 +14,6 @@ public class CommonConstants {
 
     public static final String EMPTY_STRING = "";
 
+    public static final int TIME_30S = 30000;
+
 }
