@@ -175,12 +175,6 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.tomcat.embed</groupId>
-      <artifactId>tomcat-embed-core</artifactId>
-      <version>11.0.3</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
       <groupId>com.kk.arch</groupId>
       <artifactId>kk-arch-remote-dependencies</artifactId>
       <version>1.0.0-SNAPSHOT</version>

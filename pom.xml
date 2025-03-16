@@ -222,6 +222,13 @@
                 <version>2.15.1</version>
             </dependency>
 
+            <!--Alibaba RocketMQ-->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>${rocketmq.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

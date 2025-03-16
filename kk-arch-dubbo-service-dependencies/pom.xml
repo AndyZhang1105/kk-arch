@@ -26,7 +26,7 @@
 
         <dependency>
             <groupId>com.kk.arch</groupId>
-            <artifactId>kk-arch-dubbo-common-dependency</artifactId>
+            <artifactId>kk-arch-dubbo-common-dependencies</artifactId>
             <version>${revision}</version>
         </dependency>
 

@@ -98,6 +98,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>asm</artifactId>
+                    <groupId>org.ow2.asm</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Spring Boot qq邮件服务 -->
@@ -156,12 +162,6 @@
             <groupId>org.caffinitas.ohc</groupId>
             <artifactId>ohc-core</artifactId>
             <version>0.7.4</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-core</artifactId>
-            <version>11.0.3</version>
         </dependency>
 
         <dependency>
