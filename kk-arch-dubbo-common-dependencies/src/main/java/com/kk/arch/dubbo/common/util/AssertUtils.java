@@ -1,6 +1,6 @@
 package com.kk.arch.dubbo.common.util;
 
-import com.kk.arch.dubbo.remote.exception.BusinessException;
+import com.kk.arch.remote.exception.BusinessException;
 
 import java.util.List;
 import java.util.Objects;

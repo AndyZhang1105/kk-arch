@@ -1,4 +1,4 @@
-package com.kk.arch.dubbo.remote.exception;
+package com.kk.arch.remote.exception;
 
 import lombok.Builder;
 import lombok.Data;

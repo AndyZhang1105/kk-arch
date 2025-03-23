@@ -16,10 +16,10 @@
 
 package com.kk.arch.dubbo.common.util;
 
-import com.kk.arch.dubbo.remote.vo.ResponseData;
+import com.kk.arch.remote.vo.ResponseData;
 
-import static com.kk.arch.dubbo.remote.vo.ResponseData.FAIL;
-import static com.kk.arch.dubbo.remote.vo.ResponseData.SUCCESS;
+import static com.kk.arch.remote.vo.ResponseData.FAIL;
+import static com.kk.arch.remote.vo.ResponseData.SUCCESS;
 
 /**
  * @author Zal

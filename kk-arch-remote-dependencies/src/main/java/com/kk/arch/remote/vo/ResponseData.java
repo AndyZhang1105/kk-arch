@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.kk.arch.dubbo.remote.vo;
+package com.kk.arch.remote.vo;
 
 import lombok.*;
 
@@ -29,20 +29,30 @@ import java.io.Serializable;
 @EqualsAndHashCode
 @AllArgsConstructor
 @NoArgsConstructor
-public class PageReqVo<T> implements Serializable {
+public class ResponseData<T> implements Serializable {
 
-	private long pageNum = 1; // 默认第一页
-	private long pageSize = 10; // 默认每页10条记录
-	private String sortField; // 排序字段
-	private String sortOrder; // 排序方式（asc, desc）
-	private T param;
+	/**
+	 *  成功.
+	 */
+	public static final int SUCCESS = 0;
 
-	public static <T> PageReqVo<T> of(long pageNum, long pageSize, T param) {
-		PageReqVo<T> response = new PageReqVo<>();
-		response.setPageNum(pageNum);
-		response.setPageSize(pageSize);
-		response.setParam(param);
-		return response;
+	/**
+	 * 失败.
+	 */
+	public static final int FAIL = -1;
+
+	private int code;
+	private String msg;
+	private T data;
+
+	public ResponseData(int code, String msg) {
+		this.code = code;
+		this.msg = msg;
+	}
+
+	public ResponseData(int code, T data) {
+		this.code = code;
+		this.data = data;
 	}
 
 }

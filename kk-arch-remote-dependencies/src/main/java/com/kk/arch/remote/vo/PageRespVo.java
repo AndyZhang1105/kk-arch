@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.kk.arch.dubbo.remote.vo;
+package com.kk.arch.remote.vo;
 
 import lombok.*;
 

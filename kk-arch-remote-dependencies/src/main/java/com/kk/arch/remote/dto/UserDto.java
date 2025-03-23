@@ -1,4 +1,4 @@
-package com.kk.arch.dubbo.remote.dto;
+package com.kk.arch.remote.dto;
 
 import lombok.*;
 

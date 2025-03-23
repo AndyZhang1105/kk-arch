@@ -22,8 +22,8 @@ import java.util.Map;
 
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.TypeReference;
-import com.kk.arch.dubbo.remote.vo.PageReqVo;
-import com.kk.arch.dubbo.remote.vo.PageRespVo;
+import com.kk.arch.remote.vo.PageReqVo;
+import com.kk.arch.remote.vo.PageRespVo;
 
 /**
  * 转换对象工具.

@@ -1,6 +1,6 @@
 package com.kk.arch.dubbo.common.conf;
 
-import com.kk.arch.dubbo.remote.dto.UserDto;
+import com.kk.arch.remote.dto.UserDto;
 import lombok.Synchronized;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
