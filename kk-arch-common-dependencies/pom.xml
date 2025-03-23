@@ -10,8 +10,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>kk-arch-dubbo-web-dependencies</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>kk-arch-common-dependencies</artifactId>
+    <version>${revision}</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -24,10 +24,60 @@
 
     <dependencies>
 
+        <!-- Spring Boot Redis依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!--fastJson-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <!--Apache 提供了常用的一些工具类，经常用到其中的StringUtils-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <!--Apache提供了常用的一些集合工具类，经常用到其中的CollectionUtils-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+        </dependency>
+        <!--Apache提供了常用的一些IO工具类，经常用到其中的FileUtils, IOUtils等-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+
+        <!-- aop -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+
+        <!-- ohc -->
+        <dependency>
+            <groupId>org.caffinitas.ohc</groupId>
+            <artifactId>ohc-core</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>com.kk.arch</groupId>
-            <artifactId>kk-arch-dubbo-dependencies</artifactId>
+            <artifactId>kk-arch-remote-dependencies</artifactId>
             <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
         </dependency>
 
     </dependencies>

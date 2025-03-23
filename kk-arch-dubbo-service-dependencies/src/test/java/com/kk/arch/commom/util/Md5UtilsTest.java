@@ -1,6 +1,6 @@
 package com.kk.arch.commom.util;
 
-import com.kk.arch.dubbo.common.util.Md5Utils;
+import com.kk.arch.common.util.Md5Utils;
 
 public class Md5UtilsTest {
 

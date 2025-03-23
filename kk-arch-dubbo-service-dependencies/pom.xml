@@ -24,12 +24,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>com.kk.arch</groupId>
-            <artifactId>kk-arch-dubbo-common-dependencies</artifactId>
-            <version>${revision}</version>
-        </dependency>
-
         <!--ORM相关-->
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -67,6 +61,12 @@
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.kk.arch</groupId>
+            <artifactId>kk-arch-dubbo-dependencies</artifactId>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

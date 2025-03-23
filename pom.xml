@@ -13,9 +13,10 @@
         <module>spring-cloud-alibaba-dependencies</module>
         <module>kk-arch-remote-dependencies</module>
         <module>kk-arch-dubbo-service-dependencies</module>
-        <module>kk-arch-dubbo-common-dependencies</module>
+        <module>kk-arch-common-dependencies</module>
         <module>kk-arch-dubbo-web-dependencies</module>
         <module>kk-arch-bom-dependencies</module>
+        <module>kk-arch-dubbo-dependencies</module>
     </modules>
 
     <properties>

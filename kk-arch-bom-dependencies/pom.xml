@@ -198,6 +198,36 @@
                 <version>2.3.33</version>
             </dependency>
 
+            <!-- ohc -->
+            <dependency>
+                <groupId>org.caffinitas.ohc</groupId>
+                <artifactId>ohc-core</artifactId>
+                <version>0.7.4</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations-jakarta</artifactId>
+                <version>2.2.19</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>2.17.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.17.2</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>jackson-annotations</artifactId>
+                        <groupId>com.fasterxml.jackson.core</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

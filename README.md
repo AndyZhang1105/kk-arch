@@ -37,6 +37,17 @@ KK 项目，是基于Spring Cloud Alibaba + Dubbo 的一套开源的微服务分
 * **小微商城**：基于微信平台提供小程序购物的能力。
 * **系统管理**：实现商户的账号、部门、角色、权限、门店等信息的管理。
 
+子模块层级关系：
+spring-cloud-alibaba-dependencies： 是spring-cloud-alibaba的依赖定义，是最高的，不依赖其它的项目
+kk-arch-bom-dependencies：是kk-arch-bom的依赖定义，是所有其它项目的依赖版本定义，由其它项目（包括其父项目）import，松藕合
+kk-arch-common-dependencies：是一些工具类的定义
+kk-arch-dubbo-dependencies：是dubbo的依赖定义，提供给dubbo-service和dubbo-web子模块依赖引入
+kk-arch-dubbo-service-dependencies：是service子模块的依赖定义，是所有dubbo相关的service项目的依赖定义
+kk-arch-dubbo-web-dependencies：是web子模块的依赖定义，是所有dubbo相关的web项目的依赖定义
+kk-arch-remote-dependencies：是remote子模块的依赖定义，是所有remote项目的依赖定义
+kk-arch: 顶级项目，引入了kk-arch-bom-dependencies，以管理其他子模块的依赖的版本
+
+
 营销：
 
 dubbo.application.name=KkMarketingWeb
