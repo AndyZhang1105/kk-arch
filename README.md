@@ -38,7 +38,7 @@ KK 项目，是基于Spring Cloud Alibaba + Dubbo 的一套开源的微服务分
 * **系统管理**：实现商户的账号、部门、角色、权限、门店等信息的管理。
 
 子模块层级关系：
-spring-cloud-alibaba-dependencies： 是spring-cloud-alibaba的依赖定义，是最高的，不依赖其它的项目
+spring-cloud-alibaba-dependencies： 是spring-cloud-alibaba的依赖定义，是最底层的，不依赖其它的项目
 kk-arch-bom-dependencies：是kk-arch-bom的依赖定义，是所有其它项目的依赖版本定义，由其它项目（包括其父项目）import，松藕合
 kk-arch-common-dependencies：是一些工具类的定义
 kk-arch-dubbo-dependencies：是dubbo的依赖定义，提供给dubbo-service和dubbo-web子模块依赖引入
